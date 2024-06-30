@@ -1,4 +1,3 @@
-import pdb
 from sqlite3 import IntegrityError
 from fastapi import APIRouter, HTTPException, UploadFile, Query
 from src.services.image_frame_service import ImageService

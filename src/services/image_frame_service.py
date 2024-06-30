@@ -61,7 +61,7 @@ class ImageService:
                         result.append({"depth": frame.depth, "pixels": frame.pixels})
                 return result
             except Exception as e:
+                self.logger.error(f"Error Occured: {e}")
                 raise HTTPException(status_code=500,detail="Unable to fetch data from the db")
-
 
 

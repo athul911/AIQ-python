@@ -1,4 +1,3 @@
-import pdb
 import pickle
 from sqlalchemy.orm import Session
 from src.models.image_frame import ImageFrame
