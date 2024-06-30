@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+numpy
+pillow
+matplotlib
+sqlalchemy
+pytest
+httpx
