@@ -5,9 +5,8 @@ import matplotlib.pyplot as plt
 
 class ImageProcessor:
     def resize_image(self,pixel_values, original_width=200, new_width=150):
-        image = np.array(pixel_values).reshape(-1, original_width)
-        image_np = np.array(image, dtype=np.uint8)
-        image_pil = Image.fromarray(image_np)
+        image = np.array(pixel_values, dtype=np.uint8).reshape(-1, original_width) #reshaping is not really needed for our case since its already 2D but made it generic.
+        image_pil = Image.fromarray(image)
         aspect_ratio = image_pil.width / float(image_pil.height)
         new_height = math.ceil(new_width / aspect_ratio)
         image_resized = image_pil.resize((new_width, new_height), Image.LANCZOS)

@@ -53,6 +53,7 @@ class ImageService:
                 frames = repository.get_image_frames(depth_min, depth_max, file_id)
 
                 result = []
+               
                 for frame in frames:
                     if colored:
                         colored_pixels = self.image_processor.apply_custom_colormap(frame.pixels)
