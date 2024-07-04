@@ -16,7 +16,7 @@ class ImageProcessor:
             images.append(np.array(image_resized).flatten())
         return np.array(images)
 
-    def apply_custom_colormap(self,pixels, width=150):
+    def apply_custom_colormap(self, pixels, width=150):
         image = np.array(pixels).reshape(-1, width)
         colormap = plt.cm.viridis
         colored_image = colormap(image)
