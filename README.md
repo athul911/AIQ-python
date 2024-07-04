@@ -40,8 +40,4 @@ docker run -d -p 8000:8000 --name fastapi-container fastapi-app
 ###Access app
 http://localhost:8000/docs
 
-##Testing
-note: insert the image data to the test db before running the test. once inserted, use the file to update the csv_file_id constant inside /tests/constants.py::Constants
-Also the current test coverage report is available in the repo
-
 pytest --cov=src
