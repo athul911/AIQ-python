@@ -14,3 +14,4 @@ Base = declarative_base()
 def init_db():
     image_frame.Base.metadata.create_all(bind=engine)
 
+

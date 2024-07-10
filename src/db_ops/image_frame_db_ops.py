@@ -24,3 +24,4 @@ class ImageFrameOps:
             frame.pixels = retrieved_pixels_array
         return result_data
     
+    

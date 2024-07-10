@@ -63,5 +63,6 @@ class ImageService:
             except Exception as e:
                 self.logger.error(f"Error Occured: {e}")
                 raise HTTPException(status_code=500,detail="Unable to fetch data from the db")
+            
 
 

@@ -7,3 +7,4 @@ def test_upload_and_resize(client):
         file_id = response_json["file_id"]
     assert response.status_code == 200
     assert response.json() == {"status":"Images uploaded and resized successfully.","file_id":file_id}
+

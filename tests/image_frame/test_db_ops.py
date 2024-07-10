@@ -20,3 +20,4 @@ def test_get_image_frames(db):
         depth_max = 9000.2
         frames = repository.get_image_frames(depth_min, depth_max,file_id)
         assert isinstance(frames, list)
+

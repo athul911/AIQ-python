@@ -11,3 +11,4 @@ class ImageFrame(ImageFrameBase):
 
     class Config:
         orm_mode = True
+        
