@@ -12,7 +12,7 @@ refer requirements.txt
 
     ```bash
     git clone https://github.com/athul911/AIQ-python.git
-    cd AIQ-python
+    cd Challenge-python
     ```
 
 2. **Install dependencies(use a virtual env):**
